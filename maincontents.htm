@@ -13,12 +13,13 @@
     <link href="css/Main.css" rel="stylesheet" type="text/css"/>
     <style>
         img{
-            position: absolute;
+            //position: absolute;
         }
 
         .buttons_div{
             width: 100%;
             position: absolute;
+            background-color: red;
         }
 
         .buttons_div button{
@@ -37,12 +38,12 @@
 <body  onbeforeunload="JSUnload()" ondragstart="return false;" ondrop="return false;" style="-ms-user-select:none;" oncontextmenu="return false;">
 <section class="main-content" style="border: none;">
 
-    <img id="body_img" src="assets/suit.png" width="1080" height="1920">
     <div class="buttons_div">
         <button id="previous" onclick="prev()"></button>
         <button id="next" onclick="next()"></button>
 
     </div>
+    <img id="body_img" src="assets/suit.png" width="1080" height="1920">
 
     
 </section>
