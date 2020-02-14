@@ -44,24 +44,24 @@
         <button id="next" onclick="next()"></button>
 
     </div>
-    <img id="body_img" src="assets/suit.png" width="1080" height="1920">
+    <img id="body_img" src="assets/d1.png" width="1080" height="1920">
 
     
 </section>
 
 <script>
 
-    var images = ['suit', 'kc', 'red', 'scottsdale', 'star_wars', 'yankees', 'red_sox', 'suit2'];
+    var images = ['d1', 'd2', 'd3', 'scottsdale', 'star_wars', 'yankees', 'red_sox', 'suit2'];
     var i=0;
 
     function next() {
-        if(i===7){i=-1}
+        if(i===2){i=-1}
         document.getElementById('body_img').src = 'assets/' + images[++i] + '.png';
         console.log("Next", i);
     }
 
     function prev() {
-        if(i===0 || i===-1){i=8}
+        if(i===0 || i===-1){i=3}
         document.getElementById('body_img').src = 'assets/' + images[--i] + '.png';
         console.log("Previous", i);
     }
